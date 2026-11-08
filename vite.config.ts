@@ -5,4 +5,7 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [react()],
   appType: 'spa',
+  preview: {
+    allowedHosts: ['frontend-optica.seenode.app'],
+  },
 })
