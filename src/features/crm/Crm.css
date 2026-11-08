@@ -1,0 +1,807 @@
+.crm-login {
+    min-height: 100vh;
+    background: #f5f7f8;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+    color: #033e8c
+}
+
+.login-card {
+    width: min(440px, calc(100% - 40px));
+    background: #fff;
+    border: 1px solid #e4e9ea;
+    border-radius: 14px;
+    padding: 42px 44px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 25px 70px #033e8c12
+}
+
+.crm-brand,
+.crm-sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1;
+    color: #033e8c
+}
+
+.crm-brand strong,
+.crm-sidebar-brand strong {
+    display: block;
+    font-size: 16px;
+    letter-spacing: -.04em
+}
+
+.crm-brand small,
+.crm-sidebar-brand small {
+    display: block;
+    font-size: 8px;
+    letter-spacing: .2em;
+    margin-top: 6px
+}
+
+.crm-brand-mark {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #f20519;
+    border-radius: 50%;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-style: italic;
+    color: #f20519
+}
+
+.crm-brand-mark { background: url('/logo.png') center / contain no-repeat; border: 0; color: transparent; }
+
+.crm-brand .brand-logo-image,
+.crm-sidebar-brand .brand-logo-image { width: 42px; height: 42px; object-fit: contain; }
+
+.login-copy {
+    margin: 52px 0 30px
+}
+
+.crm-eyebrow,
+.panel-kicker {
+    color: #f20519;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .16em
+}
+
+.login-copy h1 {
+    font-size: 42px;
+    line-height: 1;
+    margin: 11px 0 15px;
+    letter-spacing: -.05em
+}
+
+.login-copy em {
+    font-family: 'Playfair Display', serif;
+    color: #f20519
+}
+
+.login-copy>p:last-child {
+    color: #708089;
+    font-size: 14px
+}
+
+.login-card form {
+    display: grid;
+    gap: 16px
+}
+
+.login-card label {
+    display: grid;
+    gap: 7px;
+    color: #425e6d;
+    font-size: 12px;
+    font-weight: 600
+}
+
+.login-card input,
+.login-card select {
+    border: 1px solid #d7e0e2;
+    border-radius: 5px;
+    padding: 12px;
+    color: #033e8c;
+    background: #fff;
+    font: inherit;
+    font-size: 13px;
+    outline: none
+}
+
+.login-card input:focus,
+.login-card select:focus {
+    border-color: #f20519;
+    box-shadow: 0 0 0 3px #f2051917
+}
+
+.login-error {
+    color: #b42318;
+    background: #fff1f0;
+    border: 1px solid #f3c3bf;
+    border-radius: 5px;
+    padding: 10px 12px;
+    font-size: 12px;
+    line-height: 1.4
+}
+
+.crm-primary-button {
+    border: 0;
+    background: #f20519;
+    color: #fff;
+    border-radius: 5px;
+    padding: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 4px
+}
+
+.crm-primary-button:hover {
+    background: #ce0416
+}
+
+.crm-primary-button:disabled {
+    cursor: wait;
+    opacity: .7
+}
+
+.crm-primary-button span {
+    float: right;
+    font-size: 18px;
+    line-height: 14px
+}
+
+.login-note {
+    text-align: center;
+    color: #85939a;
+    font-size: 10px;
+    margin-top: 22px
+}
+
+.login-footer {
+    position: absolute;
+    bottom: 22px;
+    color: #84939a;
+    font-size: 11px
+}
+
+.login-footer span {
+    padding: 0 8px;
+    color: #f20519
+}
+
+.login-decoration {
+    position: absolute;
+    border-radius: 50%;
+    opacity: .5
+}
+
+.login-decoration-one {
+    width: 430px;
+    height: 430px;
+    background: #033e8c12;
+    top: -190px;
+    right: -130px
+}
+
+.login-decoration-two {
+    width: 330px;
+    height: 330px;
+    background: #f2051910;
+    bottom: -170px;
+    left: -120px
+}
+
+.crm-shell {
+    min-height: 100vh;
+    display: flex;
+    background: #f5f7f8;
+    color: #033e8c
+}
+
+.crm-sidebar {
+    width: 245px;
+    flex-shrink: 0;
+    background: #033e8c;
+    color: #fff;
+    padding: 28px 16px 18px;
+    display: flex;
+    flex-direction: column
+}
+
+.crm-sidebar-brand {
+    color: #fff;
+    padding: 0 10px 35px
+}
+
+.crm-sidebar-brand .crm-brand-mark {
+    color: #fff;
+    border-color: #f20519
+}
+
+.crm-sidebar-brand small {
+    color: #b8cadc
+}
+
+.sidebar-role {
+    border-top: 1px solid #ffffff25;
+    border-bottom: 1px solid #ffffff25;
+    padding: 16px 10px
+}
+
+.sidebar-role span {
+    display: block;
+    color: #aac0d2;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: .14em
+}
+
+.sidebar-role b {
+    display: block;
+    font-size: 13px;
+    margin-top: 7px
+}
+
+.crm-nav {
+    display: grid;
+    gap: 4px;
+    padding-top: 21px
+}
+
+.crm-nav button,
+.sidebar-bottom button {
+    border: 0;
+    background: transparent;
+    color: #d1deeb;
+    text-align: left;
+    padding: 11px 10px;
+    border-radius: 5px;
+    font: inherit;
+    font-size: 12px;
+    cursor: pointer
+}
+
+.crm-nav button span {
+    display: inline-block;
+    width: 27px;
+    color: #aac0d2
+}
+
+.crm-nav button.active,
+.crm-nav button:hover {
+    background: #ffffff1e;
+    color: #fff
+}
+
+.crm-nav button.active span {
+    color: #f20519
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+    border-top: 1px solid #ffffff25;
+    padding-top: 14px;
+    display: grid;
+    gap: 3px
+}
+
+.crm-main {
+    flex: 1;
+    min-width: 0
+}
+
+.crm-topbar {
+    height: 76px;
+    padding: 0 40px;
+    background: #fff;
+    border-bottom: 1px solid #e1e8e9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px
+}
+
+.topbar-actions small {
+    display: block;
+    color: #778890;
+    font-size: 10px;
+    margin-top: 3px
+}
+
+.notification {
+    font-size: 22px;
+    color: #607684;
+    margin-right: 13px
+}
+
+.avatar {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    background: #e8eff6;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #033e8c
+}
+
+.crm-content {
+    max-width: 1220px;
+    margin: auto;
+    padding: 42px 40px
+}
+
+.crm-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 32px
+}
+
+.crm-heading h1 {
+    font-size: 34px;
+    letter-spacing: -.05em;
+    margin: 9px 0 7px
+}
+
+.crm-heading h1 span {
+    color: #f20519;
+    font-size: 22px
+}
+
+.crm-heading>div>p:last-child {
+    color: #72818a;
+    font-size: 14px
+}
+
+.quick-action {
+    border: 1px solid #f20519;
+    color: #f20519;
+    background: #fff;
+    border-radius: 5px;
+    padding: 11px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px
+}
+
+.metric-card {
+    background: #fff;
+    border: 1px solid #e1e8e9;
+    border-radius: 7px;
+    padding: 20px
+}
+
+.metric-card span {
+    display: block;
+    color: #71828c;
+    font-size: 11px
+}
+
+.metric-card strong {
+    display: block;
+    font-size: 28px;
+    margin: 12px 0 6px;
+    letter-spacing: -.04em
+}
+
+.metric-card small {
+    color: #17845d;
+    font-size: 10px
+}
+
+.crm-lower-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 15px;
+    margin-top: 15px
+}
+
+.crm-panel {
+    background: #fff;
+    border: 1px solid #e1e8e9;
+    border-radius: 7px;
+    padding: 24px
+}
+
+.panel-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: start
+}
+
+.panel-heading h2,
+.side-panel h2 {
+    font-size: 20px;
+    margin-top: 8px
+}
+
+.panel-heading button {
+    border: 0;
+    background: transparent;
+    color: #f20519;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.panel-placeholder {
+    min-height: 170px;
+    margin-top: 25px;
+    border: 1px dashed #d5e0e2;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 25px
+}
+
+.placeholder-icon {
+    width: 45px;
+    height: 45px;
+    background: #fbe7e8;
+    color: #f20519;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 22px
+}
+
+.panel-placeholder p {
+    color: #72818a;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 7px
+}
+
+.demo-row {
+    display: flex;
+    gap: 7px;
+    margin-top: 17px
+}
+
+.demo-row span {
+    height: 6px;
+    background: #e5ecec;
+    border-radius: 8px;
+    width: 25%
+}
+
+.demo-row span:first-child {
+    background: #f20519;
+    width: 45%
+}
+
+.side-panel h2 {
+    margin-bottom: 22px
+}
+
+.side-panel button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #e1e8e9;
+    background: #fff;
+    border-radius: 5px;
+    color: #46606f;
+    padding: 13px;
+    margin-top: 9px;
+    font-size: 12px;
+    cursor: pointer
+}
+
+.side-panel button:hover {
+    border-color: #f20519;
+    color: #f20519
+}
+
+.mobile-brand {
+    display: none
+}
+
+@media(max-width:800px) {
+    .crm-sidebar {
+        width: 205px
+    }
+
+    .crm-topbar {
+        padding: 0 24px
+    }
+
+    .crm-content {
+        padding: 30px 24px
+    }
+
+    .crm-lower-grid {
+        grid-template-columns: 1fr
+    }
+
+    .login-card {
+        padding: 35px 28px
+    }
+}
+
+@media(max-width:600px) {
+    .crm-sidebar {
+        width: 66px;
+        padding: 20px 9px
+    }
+
+    .crm-sidebar-brand {
+        justify-content: center;
+        padding: 0 0 25px
+    }
+
+    .crm-sidebar-brand>span:last-child,
+    .sidebar-role,
+    .crm-nav button:not(.active)::after,
+    .crm-nav button {
+        font-size: 0
+    }
+
+    .crm-nav button {
+        height: 42px;
+        text-align: center
+    }
+
+    .crm-nav button span {
+        width: auto;
+        font-size: 16px
+    }
+
+    .crm-nav button.active {
+        font-size: 0
+    }
+
+    .crm-nav button.active span {
+        font-size: 16px
+    }
+
+    .sidebar-bottom button {
+        font-size: 0;
+        text-align: center;
+        padding: 12px 0
+    }
+
+    .sidebar-bottom button:first-child {
+        font-size: 0
+    }
+
+    .crm-topbar {
+        height: 64px;
+        padding: 0 15px
+    }
+
+    .mobile-brand {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-weight: 700;
+        font-size: 13px;
+        margin-right: auto
+    }
+
+    .mobile-brand .crm-brand-mark {
+        width: 27px;
+        height: 27px;
+        font-size: 17px
+    }
+
+    .topbar-actions>div:last-child {
+        display: none
+    }
+
+    .notification {
+        margin-right: 4px
+    }
+
+    .crm-content {
+        padding: 28px 15px
+    }
+
+    .crm-heading {
+        display: block
+    }
+
+    .quick-action {
+        margin-top: 20px
+    }
+
+    .metric-grid {
+        grid-template-columns: 1fr
+    }
+
+    .crm-heading h1 {
+        font-size: 29px
+    }
+}
+
+:root{--clinic-ink:#173b53;--clinic-ink-soft:#557080;--clinic-paper:#fbfaf7;--clinic-surface:#fff;--clinic-muted:#f2f5f4;--clinic-line:rgba(23,59,83,.11);--clinic-coral:#d95743;--clinic-coral-soft:#fff0ec;--clinic-success:#2f8062}
+.crm-lower-grid{grid-template-columns:1fr}.side-panel{display:none}
+
+/* CRM workbench direction: quiet clinic surfaces, compact navigation, clear task focus. */
+:root {
+    --clinic-ink: #173b53;
+    --clinic-ink-soft: #607985;
+    --clinic-paper: #f5f7f5;
+    --clinic-surface: #ffffff;
+    --clinic-muted: #edf3f1;
+    --clinic-line: rgba(23, 59, 83, .12);
+    --clinic-coral: #c65343;
+    --clinic-coral-soft: #fff0ec;
+    --clinic-success: #2f8062;
+    --clinic-warning: #a56e20;
+}
+
+.crm-shell { height: 100vh; overflow: hidden; background: var(--clinic-paper); color: var(--clinic-ink); }
+.crm-main { min-width: 0; height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
+.crm-sidebar { width: 216px; height: 100vh; max-height: 100vh; position: sticky; top: 0; padding: 24px 14px 18px; background: var(--clinic-paper); border-right: 1px solid var(--clinic-line); overflow-y: auto; }
+.crm-sidebar-brand { padding: 0 10px 28px; color: var(--clinic-ink); }
+.crm-sidebar-brand strong { font-size: 15px; }
+.crm-sidebar-brand small { color: var(--clinic-ink-soft); }
+.crm-sidebar-brand .brand-logo-image { width: 38px; height: 38px; }
+.sidebar-role { margin: 0 8px; padding: 12px 10px; border: 1px solid var(--clinic-line); border-radius: 8px; background: rgba(255,255,255,.45); }
+.sidebar-role span { color: var(--clinic-ink-soft); font-size: 10px; }
+.sidebar-role b { color: var(--clinic-ink); font-size: 12px; }
+.crm-nav { padding-top: 18px; gap: 4px; }
+.crm-nav button { min-height: 40px; padding: 0 11px; border-radius: 7px; color: var(--clinic-ink-soft); font-size: 12px; }
+.crm-nav button span { width: 20px; color: var(--clinic-ink-soft); }
+.crm-nav button.active { background: var(--clinic-coral-soft); color: var(--clinic-coral); box-shadow: inset 3px 0 0 var(--clinic-coral); }
+.crm-nav button.active span { color: var(--clinic-coral); }
+.crm-nav button:hover, .sidebar-bottom button:hover { background: rgba(255,255,255,.75); color: var(--clinic-ink); }
+.sidebar-bottom { padding: 16px 8px 0; }
+.sidebar-bottom button { min-height: 40px; border-radius: 7px; color: var(--clinic-ink-soft); font-size: 12px; }
+.crm-topbar { height: 68px; background: rgba(255,255,255,.8); border-bottom: 1px solid var(--clinic-line); }
+.topbar-actions { padding: 0 32px; color: var(--clinic-ink); }
+.topbar-actions small { color: var(--clinic-ink-soft); }
+.avatar { background: #dcebea; color: var(--clinic-ink); font-weight: 700; }
+.crm-content { width: 100%; max-width: 1360px; height: calc(100vh - 68px); min-height: 0; overflow: hidden; padding: 34px 40px 52px; }
+.crm-heading { margin-bottom: 22px; }
+.crm-heading h1 { color: var(--clinic-ink); font-size: 30px; letter-spacing: -.04em; }
+.crm-heading>div>p:last-child { color: var(--clinic-ink-soft); font-size: 13px; }
+.crm-eyebrow, .panel-kicker { color: var(--clinic-coral); letter-spacing: .11em; }
+.crm-panel { padding: 24px; border: 1px solid var(--clinic-line); border-radius: 10px; background: var(--clinic-surface); box-shadow: 0 3px 14px rgba(23,59,83,.035); }
+.crm-lower-grid { display: block; height: calc(100% - 76px); min-height: 0; margin-top: 0; }
+.main-panel { height: 100%; min-height: 0; overflow: auto; }
+.panel-placeholder { min-height: 300px; padding: 38px; border: 1px dashed rgba(23,59,83,.2); background: var(--clinic-muted); }
+.placeholder-icon { background: var(--clinic-coral-soft); color: var(--clinic-coral); }
+.crm-primary-button { min-height: 42px; padding: 0 16px; border-radius: 7px; background: var(--clinic-coral); border-color: var(--clinic-coral); box-shadow: 0 4px 10px rgba(198,83,67,.16); }
+.crm-primary-button:hover { background: #aa4638; }
+.crm-primary-button:focus-visible, .dialog-secondary:focus-visible, .crm-nav button:focus-visible { outline: 3px solid rgba(198,83,67,.24); outline-offset: 2px; }
+.dialog-secondary { min-height: 42px; border-radius: 7px; border-color: var(--clinic-line); color: var(--clinic-ink-soft); background: var(--clinic-surface); }
+.dialog-secondary:hover { border-color: var(--clinic-coral); color: var(--clinic-coral); background: var(--clinic-coral-soft); }
+.module-toolbar, .user-toolbar { gap: 8px; margin-bottom: 20px; }
+.crm-shell input, .crm-shell select, .crm-shell textarea { border-color: var(--clinic-line); border-radius: 7px; background: #f7f9f8; color: var(--clinic-ink); }
+.crm-shell input:focus, .crm-shell select:focus, .crm-shell textarea:focus { border-color: var(--clinic-coral); box-shadow: 0 0 0 3px rgba(198,83,67,.12); }
+.user-toolbar input { min-height: 42px; }
+.user-table-wrap { border-color: var(--clinic-line); border-radius: 8px; }
+.user-table th { background: var(--clinic-muted); color: var(--clinic-ink-soft); font-size: 10px; }
+.user-table td { border-color: var(--clinic-line); color: var(--clinic-ink-soft); }
+.user-table td:first-child { color: var(--clinic-ink); }
+.user-table tbody tr:hover { background: #fbfdfc; }
+.record-row { border-color: var(--clinic-line); border-radius: 8px; }
+.record-row:hover { border-color: rgba(198,83,67,.35); background: #fffaf8; }
+.record-list, .user-table-wrap { max-height: 430px; overflow-y: auto; scrollbar-width: thin; scrollbar-color: rgba(23,59,83,.28) transparent; }
+.record-list::-webkit-scrollbar, .user-table-wrap::-webkit-scrollbar { width: 7px; height: 7px; }
+.record-list::-webkit-scrollbar-thumb, .user-table-wrap::-webkit-scrollbar-thumb { background: rgba(23,59,83,.24); border-radius: 999px; }
+.record-list::-webkit-scrollbar-track, .user-table-wrap::-webkit-scrollbar-track { background: transparent; }
+.user-status { font-variant-numeric: tabular-nums; }
+.patient-dialog { border-radius: 12px; border-color: var(--clinic-line); box-shadow: 0 22px 60px rgba(23,59,83,.18); }
+.patient-dialog-header { padding: 24px 28px 20px; border-color: var(--clinic-line); }
+.patient-dialog-header h2 { color: var(--clinic-ink); font-size: 24px; }
+.patient-dialog-body, .user-form-body { padding: 24px 28px; }
+.patient-dialog-footer { padding: 16px 28px 22px; border-color: var(--clinic-line); }
+.login-card { border-color: var(--clinic-line); border-radius: 12px; box-shadow: 0 18px 50px rgba(23,59,83,.12); }
+.crm-login { background: var(--clinic-paper); color: var(--clinic-ink); }
+.login-copy h1 { color: var(--clinic-ink); font-size: 38px; }
+.login-copy em { color: var(--clinic-coral); }
+.login-card input, .login-card select { border-color: var(--clinic-line); color: var(--clinic-ink); background: #f7f9f8; }
+.login-card input:focus, .login-card select:focus { border-color: var(--clinic-coral); box-shadow: 0 0 0 3px rgba(198,83,67,.12); }
+
+@media (max-width: 800px) {
+    .crm-sidebar { width: 196px; }
+    .crm-content { padding: 28px 22px 42px; }
+}
+
+@media (max-width: 600px) {
+    .crm-sidebar { width: 62px; padding: 20px 8px; }
+    .crm-content { padding: 24px 14px 36px; }
+    .topbar-actions { padding: 0 16px; }
+    .crm-panel { padding: 18px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .crm-shell *, .crm-shell *::before, .crm-shell *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+.crm-shell{background:var(--clinic-paper);color:var(--clinic-ink);font-size:14px;-webkit-font-smoothing:antialiased}.crm-sidebar{width:248px;background:var(--clinic-paper);color:var(--clinic-ink);border-right:1px solid var(--clinic-line);padding:32px 18px 20px}.crm-sidebar-brand{color:var(--clinic-ink);padding:0 12px 36px}.crm-sidebar-brand .crm-brand-mark{color:var(--clinic-coral);border-color:var(--clinic-coral)}.crm-sidebar-brand small,.sidebar-role span{color:var(--clinic-ink-soft)}.sidebar-role{border-color:var(--clinic-line);padding:16px 12px}.crm-nav{padding-top:20px;gap:3px}.crm-nav button,.sidebar-bottom button{color:var(--clinic-ink-soft);border-radius:8px;min-height:42px}.crm-nav button.active{background:var(--clinic-coral-soft);color:var(--clinic-coral);font-weight:700}.crm-nav button.active span{color:var(--clinic-coral)}.crm-nav button:hover,.sidebar-bottom button:hover{background:#f1f4f2;color:var(--clinic-ink)}.sidebar-bottom{border-color:var(--clinic-line)}.crm-topbar{height:78px;background:rgba(255,255,255,.8);border-color:var(--clinic-line);backdrop-filter:blur(12px)}.topbar-actions{color:var(--clinic-ink)}.topbar-actions small,.crm-heading>div>p:last-child{color:var(--clinic-ink-soft)}.avatar{background:#e5eff0;color:var(--clinic-ink)}.crm-content{max-width:1260px;padding:44px 48px}.crm-eyebrow,.panel-kicker{color:var(--clinic-coral)}.crm-heading h1{color:var(--clinic-ink);font-size:36px;font-weight:650;text-wrap:balance}.quick-action,.crm-primary-button{background:var(--clinic-coral);border-color:var(--clinic-coral);border-radius:7px;box-shadow:0 5px 14px rgba(217,87,67,.16)}.quick-action:hover,.crm-primary-button:hover{background:#bd4938}.metric-card{background:var(--clinic-surface);border:1px solid var(--clinic-line);border-radius:10px;padding:18px 20px;box-shadow:0 2px 8px rgba(23,59,83,.025)}.metric-card span{color:var(--clinic-ink-soft)}.metric-card strong{color:var(--clinic-ink);font-variant-numeric:tabular-nums;font-weight:650}.metric-card small{color:var(--clinic-success)}.crm-lower-grid{gap:18px;margin-top:18px}.crm-panel{background:var(--clinic-surface);border:1px solid var(--clinic-line);border-radius:12px;padding:26px;box-shadow:0 3px 12px rgba(23,59,83,.025)}.panel-placeholder{border-color:rgba(23,59,83,.15);background:var(--clinic-muted);border-radius:9px}.placeholder-icon{background:var(--clinic-coral-soft);color:var(--clinic-coral)}.side-panel button{border-color:var(--clinic-line);border-radius:7px;color:var(--clinic-ink-soft);min-height:44px}.side-panel button:hover{border-color:var(--clinic-coral);color:var(--clinic-coral);background:var(--clinic-coral-soft)}input,select,textarea{background:#f7f9f8;border:1px solid rgba(23,59,83,.14);border-radius:7px;color:var(--clinic-ink)}input:focus,select:focus,textarea:focus{border-color:var(--clinic-coral);box-shadow:0 0 0 3px rgba(217,87,67,.12)}button{transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease}button:active{transform:scale(.98)}
+.module-toolbar{display:flex;align-items:center;gap:12px;margin-bottom:18px}.module-toolbar input{flex:1;min-height:44px;padding:0 14px}.record-list{display:grid;gap:8px}.record-row,.recipe-row{width:100%;min-height:64px;display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--clinic-line);border-radius:9px;background:var(--clinic-surface);color:var(--clinic-ink);text-align:left}.record-row:hover{border-color:rgba(217,87,67,.45);background:#fffaf8}.record-row small,.recipe-row small{color:var(--clinic-ink-soft);font-size:11px}.patient-card-head{display:flex;align-items:center;gap:16px;padding-bottom:22px;border-bottom:1px solid var(--clinic-line)}.avatar.large{width:54px;height:54px;font-size:18px}.patient-card h2{margin:5px 0;font-size:24px}.patient-card small{color:var(--clinic-ink-soft)}.patient-details{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:22px 0}.patient-details span{display:grid;gap:5px;color:var(--clinic-ink-soft);font-size:12px}.patient-details b{color:var(--clinic-ink);font-size:11px;text-transform:uppercase;letter-spacing:.08em}.patient-actions{display:flex;flex-wrap:wrap;gap:8px}.patient-actions button{border:1px solid var(--clinic-line);background:var(--clinic-surface);color:var(--clinic-ink);border-radius:7px;padding:11px 14px;font-weight:650}.patient-actions button:first-child{background:var(--clinic-coral);border-color:var(--clinic-coral);color:#fff}.context-card{background:var(--clinic-coral-soft);color:var(--clinic-ink);border-radius:8px;padding:13px 14px}.modal-backdrop{background:rgba(23,59,83,.28);backdrop-filter:blur(3px)}.modal-card{border-radius:14px;box-shadow:0 20px 60px rgba(23,59,83,.18)}
+@media(max-width:800px){.crm-sidebar{width:210px}.crm-content{padding:32px 24px}.patient-details{grid-template-columns:1fr 1fr}}@media(max-width:600px){.crm-sidebar{width:66px}.crm-content{padding:28px 15px}.module-toolbar{align-items:stretch;flex-direction:column}.module-toolbar .crm-primary-button{width:100%}.patient-details{grid-template-columns:1fr}.patient-actions button{flex:1}}
+.consultation-history .module-toolbar{justify-content:space-between;align-items:flex-start}.consultation-history .module-toolbar h2{margin-top:6px}.consultation-history .module-toolbar button{border:1px solid var(--clinic-line);background:var(--clinic-surface);color:var(--clinic-ink);border-radius:7px;padding:10px 12px}.consultation-list{display:grid;gap:12px}.consultation-item{border:1px solid var(--clinic-line);border-radius:9px;padding:18px;background:var(--clinic-surface)}.consultation-item-head{display:flex;justify-content:space-between;gap:16px;padding-bottom:14px;border-bottom:1px solid var(--clinic-line)}.consultation-item-head h3{margin-top:6px;font-size:18px}.consultation-item-head small{color:var(--clinic-ink-soft)}.consultation-details{display:grid;gap:12px;margin:16px 0 0}.consultation-details div{display:grid;gap:4px}.consultation-details dt{color:var(--clinic-ink-soft);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.consultation-details dd{margin:0;color:var(--clinic-ink);line-height:1.5}.history-empty{border:1px dashed var(--clinic-line);border-radius:9px;padding:24px;color:var(--clinic-ink-soft);text-align:center}
+.modal-backdrop{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:24px;background:rgba(23,59,83,.32);backdrop-filter:blur(4px)}.patient-dialog{width:min(760px,100%);max-height:calc(100vh - 48px);overflow:auto;background:var(--clinic-surface);border:1px solid var(--clinic-line);border-radius:14px;box-shadow:0 24px 70px rgba(23,59,83,.2)}.patient-dialog-header{display:flex;justify-content:space-between;gap:24px;padding:28px 32px 24px;border-bottom:1px solid var(--clinic-line)}.patient-dialog-header h2{margin:6px 0 8px;font-size:26px;color:var(--clinic-ink)}.patient-dialog-header p:last-child{margin:0;color:var(--clinic-ink-soft);font-size:13px}.dialog-close{width:40px;height:40px;border:1px solid var(--clinic-line);border-radius:7px;background:var(--clinic-surface);color:var(--clinic-ink-soft);font-size:24px;line-height:1;cursor:pointer}.dialog-close:hover,.dialog-close:focus-visible{border-color:var(--clinic-coral);color:var(--clinic-coral)}.patient-dialog-body{display:grid;grid-template-columns:190px 1fr;gap:28px;padding:28px 32px}.patient-dialog-context{display:grid;align-content:start;gap:10px;color:var(--clinic-ink-soft);font-size:13px;line-height:1.5}.dialog-context-mark{display:grid;place-items:center;width:42px;height:42px;border:2px solid var(--clinic-coral);border-radius:50%;color:var(--clinic-coral);font-family:Georgia,serif;font-size:24px;font-style:italic}.patient-dialog-context strong{color:var(--clinic-ink);font-size:15px}.dialog-required{margin-top:10px;font-size:11px;color:var(--clinic-coral)}.patient-dialog-fields{display:grid;gap:24px}.patient-dialog-fields fieldset{display:grid;gap:12px;margin:0;padding:0;border:0}.patient-dialog-fields legend{margin-bottom:2px;color:var(--clinic-ink);font-size:13px;font-weight:700}.patient-field-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.patient-dialog-fields label{display:grid;gap:7px;color:var(--clinic-ink-soft);font-size:12px;font-weight:600}.patient-dialog-fields input,.patient-dialog-fields textarea{width:100%;min-height:44px;padding:11px 12px;font:inherit}.patient-dialog-fields textarea{resize:vertical}.patient-field-full{grid-column:1/-1}.patient-dialog-error{margin:0 32px 18px}.patient-dialog-footer{display:flex;justify-content:flex-end;gap:10px;padding:18px 32px 24px;border-top:1px solid var(--clinic-line)}.dialog-secondary{min-height:44px;padding:0 16px;border:1px solid var(--clinic-line);border-radius:7px;background:var(--clinic-surface);color:var(--clinic-ink-soft);font-weight:650;cursor:pointer}.dialog-secondary:hover,.dialog-secondary:focus-visible{border-color:var(--clinic-coral);color:var(--clinic-coral)}.patient-dialog-footer .crm-primary-button{min-height:44px;margin:0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:600px){.modal-backdrop{padding:12px}.patient-dialog{max-height:calc(100vh - 24px)}.patient-dialog-header,.patient-dialog-body{padding-left:20px;padding-right:20px}.patient-dialog-body{grid-template-columns:1fr;gap:20px}.patient-dialog-context{padding-bottom:18px;border-bottom:1px solid var(--clinic-line)}.patient-dialog-error{margin-left:20px;margin-right:20px}.patient-dialog-footer{padding-left:20px;padding-right:20px;flex-direction:column-reverse}.patient-dialog-footer button{width:100%}}
+.consultation-form{background:var(--clinic-surface);border:1px solid var(--clinic-line);border-radius:12px;overflow:hidden}.consultation-form-header{display:flex;justify-content:space-between;gap:20px;padding:26px 28px 22px;border-bottom:1px solid var(--clinic-line)}.consultation-form-header h2{margin:6px 0 7px;color:var(--clinic-ink);font-size:26px}.consultation-form-header p:last-child{margin:0;color:var(--clinic-ink-soft);font-size:13px}.consultation-patient-context{display:flex;align-items:center;gap:14px;padding:16px 28px;background:var(--clinic-muted);border-bottom:1px solid var(--clinic-line)}.consultation-patient-context .avatar{flex:none}.consultation-patient-context div{display:grid;gap:4px;flex:1}.consultation-patient-context strong{color:var(--clinic-ink);font-size:15px}.consultation-patient-context span{color:var(--clinic-ink-soft);font-size:12px}.consultation-patient-context>b{padding:6px 9px;border-radius:999px;background:#e4f2eb;color:var(--clinic-success);font-size:10px;text-transform:uppercase;letter-spacing:.06em}.consultation-form-body{display:grid;gap:22px;padding:26px 28px}.consultation-section{display:grid;gap:9px;margin:0;padding:0;border:0}.consultation-section legend{color:var(--clinic-ink);font-size:13px;font-weight:700}.consultation-section label{display:grid;gap:7px;color:var(--clinic-ink-soft);font-size:12px;font-weight:600}.consultation-section input,.consultation-section textarea{width:100%;min-height:44px;padding:11px 12px;font:inherit}.consultation-section textarea{resize:vertical}.consultation-hint{margin:0;color:var(--clinic-ink-soft);font-size:12px;line-height:1.45}.consultation-measurements{display:grid;grid-template-columns:1fr 1fr;gap:16px}.consultation-measurements .consultation-section{padding:18px;border:1px solid var(--clinic-line);border-radius:9px;background:#fbfcfb}.consultation-measurements .consultation-section:first-child{border-top:3px solid var(--clinic-coral)}.consultation-measurements .consultation-section:last-child{border-top:3px solid #8aa5a6}.consultation-large-textarea{min-height:104px!important}.consultation-form-error{margin:0 28px 18px}.consultation-form-footer{display:flex;justify-content:flex-end;gap:10px;padding:18px 28px 24px;border-top:1px solid var(--clinic-line)}.consultation-form-footer .crm-primary-button{min-height:44px;margin:0}.consultation-form-footer .dialog-secondary{min-height:44px}@media(max-width:700px){.consultation-form-header,.consultation-form-body{padding-left:20px;padding-right:20px}.consultation-patient-context{padding-left:20px;padding-right:20px;align-items:flex-start}.consultation-patient-context>b{margin-left:auto}.consultation-measurements{grid-template-columns:1fr}.consultation-form-error{margin-left:20px;margin-right:20px}.consultation-form-footer{padding-left:20px;padding-right:20px;flex-direction:column-reverse}.consultation-form-footer button{width:100%}}
+.user-management-header{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:22px}.user-management-header h2{margin:6px 0;color:var(--clinic-ink);font-size:26px}.user-management-header p:last-child{margin:0;color:var(--clinic-ink-soft);font-size:13px}.user-toolbar{display:flex;align-items:center;gap:10px;margin-bottom:18px}.user-toolbar input{flex:1;min-height:44px;padding:0 14px}.user-toolbar .dialog-secondary{min-height:44px;cursor:pointer}.user-toolbar>span{margin-left:auto;color:var(--clinic-ink-soft);font-size:12px}.user-table-wrap{overflow-x:auto;border:1px solid var(--clinic-line);border-radius:9px}.user-table{width:100%;border-collapse:collapse;min-width:680px}.user-table th{padding:12px 14px;background:var(--clinic-muted);color:var(--clinic-ink-soft);font-size:10px;letter-spacing:.08em;text-align:left;text-transform:uppercase}.user-table td{padding:15px 14px;border-top:1px solid var(--clinic-line);color:var(--clinic-ink-soft);font-size:12px;white-space:nowrap}.user-table td:first-child{display:grid;gap:4px;color:var(--clinic-ink)}.user-table td:first-child small{color:var(--clinic-ink-soft);font-size:11px}.user-status{display:inline-flex;padding:5px 8px;border-radius:999px;font-size:10px;font-weight:700}.user-status.is-active{background:#e4f2eb;color:var(--clinic-success)}.user-status.is-inactive{background:#f3eeee;color:#98645f}.user-actions{display:flex;justify-content:flex-end;gap:7px}.user-actions button{border:1px solid var(--clinic-line);border-radius:6px;background:var(--clinic-surface);color:var(--clinic-ink-soft);padding:8px 10px;cursor:pointer;font-size:11px}.user-actions button:hover:not(:disabled){border-color:var(--clinic-coral);color:var(--clinic-coral)}.user-actions button:disabled{cursor:not-allowed;opacity:.5}.user-pagination{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:18px;color:var(--clinic-ink-soft);font-size:12px}.user-pagination button{border:0;background:none;color:var(--clinic-coral);cursor:pointer;font-weight:700}.user-pagination button:disabled{color:var(--clinic-ink-soft);cursor:not-allowed;opacity:.5}.user-form-body{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:28px 32px}.user-form-body label{display:grid;gap:7px;color:var(--clinic-ink-soft);font-size:12px;font-weight:600}.user-form-body label small{font-weight:400;color:var(--clinic-ink-soft)}.user-form-body input,.user-form-body select{width:100%;min-height:44px;padding:11px 12px;font:inherit}
+@media(max-width:700px){.user-management-header{align-items:stretch;flex-direction:column}.user-management-header .crm-primary-button{width:100%}.user-toolbar{align-items:stretch;flex-wrap:wrap}.user-toolbar input{flex-basis:100%}.user-toolbar>span{margin:0}.user-form-body{grid-template-columns:1fr;padding-left:20px;padding-right:20px}}
+.product-table .product-stock{font-variant-numeric:tabular-nums;font-weight:700;color:var(--clinic-ink)}.user-status.is-low{background:#fff5df;color:#9a6a17}.user-status.is-out{background:#f3eeee;color:#98645f}.product-description-field,.product-image-field{grid-column:1/-1}.product-description-field textarea{width:100%;min-height:88px;padding:11px 12px;resize:vertical;font:inherit}.product-image-preview{grid-column:1/-1;min-height:120px;border:1px dashed var(--clinic-line);border-radius:8px;display:grid;place-items:center;overflow:hidden;color:var(--clinic-ink-soft);font-size:12px}.product-image-preview img{display:block;width:100%;max-height:180px;object-fit:contain}.product-table .user-actions{min-width:160px}
+.sales-row:focus-visible { outline: 3px solid rgba(198,83,67,.28); outline-offset: -3px; background: var(--clinic-coral-soft); }
+
+.user-toolbar select {
+    flex: 0 0 174px;
+    min-width: 174px;
+    min-height: 44px;
+    padding: 0 36px 0 14px;
+    appearance: none;
+    cursor: pointer;
+    background-color: var(--clinic-surface);
+    background-image: linear-gradient(45deg, transparent 50%, var(--clinic-ink-soft) 50%), linear-gradient(135deg, var(--clinic-ink-soft) 50%, transparent 50%);
+    background-position: calc(100% - 17px) 18px, calc(100% - 12px) 18px;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+}
+.user-toolbar select:hover { border-color: rgba(198,83,67,.55); }
+.user-toolbar select option { background: var(--clinic-surface); color: var(--clinic-ink); }
+
+/* Keep table cells as table cells so row borders span the full grid. */
+.user-table td:first-child { display: table-cell; }
+.user-table td:first-child strong,
+.user-table td:first-child small { display: block; }
+.user-table td:first-child strong { margin-bottom: 4px; }
+.user-actions { width: 1%; min-width: 160px; }
+.user-actions button { white-space: nowrap; }
+
+.crm-toast { position: fixed; z-index: 40; right: 24px; bottom: 24px; max-width: min(360px, calc(100vw - 32px)); margin: 0; padding: 14px 16px; border: 1px solid rgba(47,128,98,.2); border-radius: 10px; background: #eff9f3; color: #205b45; box-shadow: 0 12px 28px rgba(23,59,83,.14); font-size: 13px; font-weight: 650; animation: crm-toast-in .24s ease-out both; }
+@keyframes crm-toast-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 600px) { .crm-toast { right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); } }
+@media (prefers-reduced-motion: reduce) { .crm-toast { animation: none; } }
+
+.crm-nav { display: grid; gap: 18px; }
+.crm-nav-group { display: grid; gap: 3px; }
+.crm-nav-group + .crm-nav-group { padding-top: 16px; border-top: 1px solid var(--clinic-line); }
+.crm-nav-label { margin: 0 11px 6px; color: var(--clinic-ink-soft); font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+@media (max-width: 600px) {
+    .crm-nav { gap: 8px; }
+    .crm-nav-group { gap: 6px; }
+    .crm-nav-group + .crm-nav-group { padding-top: 8px; }
+    .crm-nav-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+
+@media (max-width: 700px) {
+    .crm-content { padding-bottom: max(36px, env(safe-area-inset-bottom)); }
+    .crm-heading h1 { font-size: clamp(26px, 8vw, 34px); line-height: 1.1; }
+    .user-table-wrap { max-width: 100%; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; scrollbar-gutter: stable; }
+    .user-toolbar { gap: 8px; }
+    .user-toolbar input, .user-toolbar select, .user-toolbar button { min-height: 46px; }
+    .user-toolbar select, .user-toolbar button { flex: 1 1 0; }
+    .user-pagination button { min-height: 44px; padding-inline: 10px; }
+    .patient-dialog { max-height: calc(100dvh - 24px); }
+    .patient-dialog input, .patient-dialog select, .patient-dialog textarea { font-size: 16px; }
+    .patient-dialog-footer button { min-height: 48px; }
+}
+
+@media (max-width: 600px) {
+    .crm-sidebar { width: 72px; padding-inline: 10px; }
+    .crm-nav button, .sidebar-bottom button { min-width: 48px; min-height: 48px; }
+    .crm-nav button span, .sidebar-bottom button { display: grid; place-items: center; }
+    .crm-panel { min-width: 0; }
+    .record-row { min-height: 72px; }
+}
