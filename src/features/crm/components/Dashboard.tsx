@@ -80,7 +80,7 @@ export default function Dashboard({ user, onLogout }: { user: AuthUser; onLogout
   if (active === 'Usuarios y roles') body = <UserManagement currentUserId={user.id} />
   else if (active === 'Inventario') body = <ProductManagement canManage={role === 'admin'} />
   else if (active === 'Servicios' && role === 'admin') body = <ServiceManagement />
-  else if ((active === 'Nueva venta' || active === 'Ventas y pagos') && (role === 'admin' || role === 'recepcion')) body = <SalesManagement showSeller={role === 'admin'} />
+  else if (active === 'Ventas' && (role === 'admin' || role === 'recepcion')) body = <SalesManagement showSeller={role === 'admin'} />
   else if (active === 'Pacientes' && role !== 'recepcion') body = <PatientList patients={patients} loading={patientsLoading} error={patientsError} totalPages={patientTotalPages} page={patientPage} onSearch={(query) => { setPatientQuery(query); setPatientPage(0) }} onPageChange={setPatientPage} onNew={() => setShowPatientForm(true)} onSelect={selectPatient} />
   else if (active === 'Ficha del paciente' && selected && role !== 'recepcion') body = <>
     {consultationsError && <p className="login-error" role="alert">{consultationsError}</p>}
