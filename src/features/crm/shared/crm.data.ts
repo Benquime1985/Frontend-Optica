@@ -4,12 +4,12 @@ export type MenuGroup = { label: string; items: string[] }
 
 export const menuGroups: Record<Role, MenuGroup[]> = {
   admin: [
-    { label: 'Operación', items: ['Resumen', 'Nueva venta', 'Ventas y pagos', 'Inventario', 'Servicios'] },
+    { label: 'Operación', items: ['Ventas', 'Inventario', 'Servicios'] },
     { label: 'Atención', items: ['Pacientes'] },
     { label: 'Administración', items: ['Usuarios y roles'] },
   ],
   recepcion: [
-    { label: 'Operación', items: ['Resumen', 'Nueva venta', 'Inventario'] },
+    { label: 'Operación', items: ['Ventas', 'Inventario'] },
   ],
   optometrista: [
     { label: 'Atención', items: ['Mi agenda', 'Pacientes', 'Historial clínico', 'Nueva consulta'] },
